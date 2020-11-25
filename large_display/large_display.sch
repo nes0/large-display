@@ -315,7 +315,7 @@ F 3 "" H 2400 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 1500 2400 1750
+	2400 1500 2400 1600
 $Comp
 L power:GND #PWR0108
 U 1 1 5FCD9371
@@ -328,7 +328,7 @@ F 3 "" H 2400 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 2050 2400 2250
+	2400 2050 2400 2150
 $Comp
 L Device:R R2
 U 1 1 5FCE46C0
@@ -996,8 +996,6 @@ F 3 "~" H 4950 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4950 2750 4950 2800
-Wire Wire Line
 	4950 2400 4950 2450
 Wire Wire Line
 	4950 1700 4950 1750
@@ -1169,8 +1167,6 @@ Wire Wire Line
 	4800 3100 4800 3200
 Wire Wire Line
 	4800 3200 4950 3200
-Wire Wire Line
-	4950 3200 4950 3100
 Wire Wire Line
 	4950 3200 4950 4300
 Wire Wire Line
@@ -2248,14 +2244,30 @@ Wire Wire Line
 Wire Wire Line
 	7550 2400 7550 5100
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 615CD222
 P 2750 1900
-F 0 "C?" H 2865 1946 50  0000 L CNN
+F 0 "C3" H 2865 1946 50  0000 L CNN
 F 1 "C" H 2865 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2788 1750 50  0001 C CNN
 F 3 "~" H 2750 1900 50  0001 C CNN
 	1    2750 1900
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2400 1600 2750 1600
+Wire Wire Line
+	2750 1600 2750 1750
+Connection ~ 2400 1600
+Wire Wire Line
+	2400 1600 2400 1750
+Wire Wire Line
+	2400 2150 2750 2150
+Wire Wire Line
+	2750 2150 2750 2050
+Connection ~ 2400 2150
+Wire Wire Line
+	2400 2150 2400 2250
+Wire Wire Line
+	4950 2750 4950 3200
 $EndSCHEMATC
