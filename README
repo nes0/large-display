@@ -1,0 +1,7 @@
+PCB layout for a nominally 100mm 14 or 7 segment display including a PWM capable driver.
+
+https://github.com/nes0/large-display
+
+Licenced under "CERN Open Hardware Licence Version 2 - Weakly Reciprocal" http://ohwr.org/cernohl. Also see "cern_ohl_w_v2.txt"
+
+No warranty is provided for this documentation implied or otherwise.
