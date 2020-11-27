@@ -1,9 +1,18 @@
+TLC5940 Output Mapping
+0: a,  1: b,  2: c,  3: d
+4: e,  5: f,  6: g,  7: g'
+8: h,  9: i,  10: j,  11: k
+12: L,  13: m,  14: n,  15, p
+
+R1 = 39/I(LED)
+e.g. R1 = 2k, I(LED) = 20mA
+
 14 Segment
-DNF: R16, R18, Dg7
+DNF: R16, R19, Dg4
 
 7 Segment
 DNF: Dh*, Di*, DJ*, Dk*, DL*, Dm*
-DNF: R15, R17, R19 - R32
+DNF: R15, R17-18, R20-39
 
 Colon
 Fit: Dn1, Dn2, R33
@@ -14,11 +23,6 @@ Fit: Dp1, R35
 Inv. Comma
 Fit: Dn3, R34
 
-R1 = 39/I(LED)
-e.g. R1 = 2k, I(LED) = 20mA
-
-TLC5940 Output Mapping
-0: a,  1: b,  2: c,  3: d
-4: e,  5: f,  6: g,  7: g
-8: h,  9: i,  10: j,  11: k
-12: L,  13: m,  14: n,  15, p
+rev 0.2
+https://github.com/nes0/large-display
+SPDX-License-Identifier:  CERN-OHL-W-2.0
