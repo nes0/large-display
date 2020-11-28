@@ -25,8 +25,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tlc5940.pdf" H 3500 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 2950 8950 2950
-Wire Wire Line
 	8800 4900 9050 4900
 Wire Wire Line
 	8750 4800 8950 4800
@@ -44,23 +42,23 @@ $EndComp
 $Comp
 L power:VCC #PWR010
 U 1 1 5FBCAFFD
-P 8700 1750
-F 0 "#PWR010" H 8700 1600 50  0001 C CNN
-F 1 "VCC" H 8717 1923 50  0000 C CNN
-F 2 "" H 8700 1750 50  0001 C CNN
-F 3 "" H 8700 1750 50  0001 C CNN
-	1    8700 1750
+P 8700 1400
+F 0 "#PWR010" H 8700 1250 50  0001 C CNN
+F 1 "VCC" H 8717 1573 50  0000 C CNN
+F 2 "" H 8700 1400 50  0001 C CNN
+F 3 "" H 8700 1400 50  0001 C CNN
+	1    8700 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Vdrive #PWR011
 U 1 1 5FBCC6DE
-P 8950 1750
-F 0 "#PWR011" H 8750 1600 50  0001 C CNN
-F 1 "Vdrive" H 8967 1923 50  0000 C CNN
-F 2 "" H 8950 1750 50  0001 C CNN
-F 3 "" H 8950 1750 50  0001 C CNN
-	1    8950 1750
+P 8800 1150
+F 0 "#PWR011" H 8600 1000 50  0001 C CNN
+F 1 "Vdrive" H 8817 1323 50  0000 C CNN
+F 2 "" H 8800 1150 50  0001 C CNN
+F 3 "" H 8800 1150 50  0001 C CNN
+	1    8800 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -71,12 +69,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x11 J1
 U 1 1 5FC1A142
-P 9250 2450
-F 0 "J1" H 9330 2492 50  0000 L CNN
-F 1 "Conn_01x11" H 9330 2401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Horizontal" H 9250 2450 50  0001 C CNN
-F 3 "~" H 9250 2450 50  0001 C CNN
-	1    9250 2450
+P 10600 2450
+F 0 "J1" H 10680 2492 50  0000 L CNN
+F 1 "Conn_01x11" H 10680 2401 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Horizontal" H 10600 2450 50  0001 C CNN
+F 3 "~" H 10600 2450 50  0001 C CNN
+	1    10600 2450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -91,65 +89,31 @@ F 3 "~" H 9250 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 1750 8950 2950
-Wire Wire Line
-	9050 2850 8750 2850
-Wire Wire Line
-	8750 2850 8750 4800
-Wire Wire Line
-	8800 2950 8800 4900
-Wire Wire Line
-	9050 2750 8700 2750
-Wire Wire Line
-	8700 2750 8700 4700
-Wire Wire Line
 	8700 4700 9050 4700
-Wire Wire Line
-	9050 2550 8550 2550
 Wire Wire Line
 	8550 2550 8550 4500
 Wire Wire Line
 	8550 4500 9050 4500
 Wire Wire Line
-	9050 2450 8500 2450
-Wire Wire Line
 	8500 2450 8500 4400
 Wire Wire Line
 	8500 4400 9050 4400
-Wire Wire Line
-	9050 2350 8450 2350
 Wire Wire Line
 	8450 2350 8450 4300
 Wire Wire Line
 	8450 4300 9050 4300
 Wire Wire Line
-	9050 2250 8400 2250
-Wire Wire Line
 	8400 2250 8400 4200
 Wire Wire Line
 	8400 4200 9050 4200
 Wire Wire Line
-	9050 2150 8350 2150
-Wire Wire Line
-	8350 2150 8350 4100
-Wire Wire Line
 	8350 4100 9050 4100
 Wire Wire Line
-	9050 2050 8300 2050
-Wire Wire Line
 	8300 4000 9050 4000
-Wire Wire Line
-	9050 1950 8250 1950
 Wire Wire Line
 	8250 1950 8250 3900
 Wire Wire Line
 	8250 3900 9050 3900
-Connection ~ 8950 2950
-Wire Wire Line
-	8950 2950 8800 2950
-Wire Wire Line
-	8700 1750 8700 2750
-Connection ~ 8700 2750
 Wire Wire Line
 	9050 4600 8650 4600
 Wire Wire Line
@@ -162,8 +126,6 @@ Wire Wire Line
 	3050 5200 3050 5850
 Wire Wire Line
 	3050 5850 8600 5850
-Wire Wire Line
-	8600 2650 9050 2650
 Wire Wire Line
 	8550 4500 8550 5900
 Wire Wire Line
@@ -1295,8 +1257,6 @@ Wire Wire Line
 Wire Wire Line
 	8300 4000 8300 6150
 Wire Wire Line
-	8300 2050 8300 4000
-Wire Wire Line
 	7850 1300 8000 1300
 Connection ~ 7850 1300
 Wire Wire Line
@@ -2324,4 +2284,135 @@ F 3 "~" H 5750 4100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 4250 5750 4500
+$Comp
+L 74xx:74HC244 U2
+U 1 1 60667868
+P 9650 2450
+F 0 "U2" H 9400 3150 50  0000 C CNN
+F 1 "74HC244" H 9900 1750 50  0000 C CNN
+F 2 "" H 9650 2450 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf" H 9650 2450 50  0001 C CNN
+	1    9650 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1400 8700 3400
+Wire Wire Line
+	8800 1150 8800 3500
+$Comp
+L power:VCC #PWR013
+U 1 1 607D19C3
+P 9650 1400
+F 0 "#PWR013" H 9650 1250 50  0001 C CNN
+F 1 "VCC" H 9667 1573 50  0000 C CNN
+F 2 "" H 9650 1400 50  0001 C CNN
+F 3 "" H 9650 1400 50  0001 C CNN
+	1    9650 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 607D32AB
+P 9650 3700
+F 0 "#PWR014" H 9650 3450 50  0001 C CNN
+F 1 "GND" H 9655 3527 50  0000 C CNN
+F 2 "" H 9650 3700 50  0001 C CNN
+F 3 "" H 9650 3700 50  0001 C CNN
+	1    9650 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3700 9650 3300
+Wire Wire Line
+	9650 1650 9650 1400
+Wire Wire Line
+	9150 2650 8600 2650
+Wire Wire Line
+	9150 2550 8550 2550
+Wire Wire Line
+	9150 2450 8500 2450
+Wire Wire Line
+	9150 2350 8450 2350
+Wire Wire Line
+	9150 2250 8400 2250
+Wire Wire Line
+	9150 2850 9050 2850
+Wire Wire Line
+	9050 2850 9050 2950
+Wire Wire Line
+	9050 3300 9650 3300
+Connection ~ 9650 3300
+Wire Wire Line
+	9650 3300 9650 3250
+Wire Wire Line
+	9150 2950 9050 2950
+Connection ~ 9050 2950
+Wire Wire Line
+	9050 2950 9050 3300
+Wire Wire Line
+	8250 1950 9150 1950
+Wire Wire Line
+	10150 1950 10400 1950
+Wire Wire Line
+	8300 1500 10350 1500
+Wire Wire Line
+	10350 1500 10350 2050
+Wire Wire Line
+	10350 2050 10400 2050
+Wire Wire Line
+	8300 1500 8300 4000
+Wire Wire Line
+	10400 2150 10300 2150
+Wire Wire Line
+	10300 2150 10300 1550
+Wire Wire Line
+	10300 1550 8350 1550
+Wire Wire Line
+	8350 1550 8350 4100
+Wire Wire Line
+	9150 2050 9050 2050
+Wire Wire Line
+	9050 2050 9050 2150
+Connection ~ 9050 2850
+Wire Wire Line
+	9150 2150 9050 2150
+Connection ~ 9050 2150
+Wire Wire Line
+	9050 2150 9050 2850
+Wire Wire Line
+	10400 2750 10150 2750
+Wire Wire Line
+	10150 2750 10150 3400
+Wire Wire Line
+	10150 3400 8700 3400
+Connection ~ 8700 3400
+Wire Wire Line
+	8700 3400 8700 4700
+Wire Wire Line
+	10400 2850 10200 2850
+Wire Wire Line
+	10200 2850 10200 3450
+Wire Wire Line
+	10200 3450 8750 3450
+Wire Wire Line
+	8750 3450 8750 4800
+Wire Wire Line
+	10400 2950 10250 2950
+Wire Wire Line
+	10250 2950 10250 3500
+Wire Wire Line
+	10250 3500 8800 3500
+Connection ~ 8800 3500
+Wire Wire Line
+	8800 3500 8800 4900
+Wire Wire Line
+	10400 2250 10150 2250
+Wire Wire Line
+	10150 2350 10400 2350
+Wire Wire Line
+	10400 2450 10150 2450
+Wire Wire Line
+	10150 2550 10400 2550
+Wire Wire Line
+	10400 2650 10150 2650
 $EndSCHEMATC
