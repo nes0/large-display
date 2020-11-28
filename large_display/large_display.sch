@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "Large Display"
+Date "2020-11-28"
+Rev "0.2"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "https://github.com/nes0/large-display"
+Comment2 "SPDX-License-Identifier:  CERN-OHL-W-2.0"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -236,7 +236,7 @@ $EndComp
 Wire Wire Line
 	2300 4500 2300 4700
 Wire Wire Line
-	2000 2050 2000 2250
+	2000 2050 2000 2150
 $Comp
 L power:VCC #PWR01
 U 1 1 5FCD327C
@@ -249,7 +249,7 @@ F 3 "" H 2000 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 1500 2000 1750
+	2000 1500 2000 1600
 $Comp
 L Device:CP C2
 U 1 1 5FCD5E25
@@ -2290,7 +2290,7 @@ U 1 1 60667868
 P 9650 2450
 F 0 "U2" H 9400 3150 50  0000 C CNN
 F 1 "74HC244" H 9900 1750 50  0000 C CNN
-F 2 "" H 9650 2450 50  0001 C CNN
+F 2 "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm" H 9650 2450 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf" H 9650 2450 50  0001 C CNN
 	1    9650 2450
 	1    0    0    -1  
@@ -2415,4 +2415,29 @@ Wire Wire Line
 	10150 2550 10400 2550
 Wire Wire Line
 	10400 2650 10150 2650
+$Comp
+L Device:C C4
+U 1 1 60E9B274
+P 1500 1900
+F 0 "C4" H 1615 1946 50  0000 L CNN
+F 1 "100n" H 1615 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1538 1750 50  0001 C CNN
+F 3 "~" H 1500 1900 50  0001 C CNN
+	1    1500 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1600 1500 1600
+Wire Wire Line
+	1500 1600 1500 1750
+Connection ~ 2000 1600
+Wire Wire Line
+	2000 1600 2000 1750
+Wire Wire Line
+	1500 2050 1500 2150
+Wire Wire Line
+	1500 2150 2000 2150
+Connection ~ 2000 2150
+Wire Wire Line
+	2000 2150 2000 2250
 $EndSCHEMATC
